@@ -25,6 +25,7 @@ export const GetFlightDetails = ({ id = 0 }) => {
   useEffect(() => {
     if (data?.length > 0) return;
     fetchData();
+    // dependency
   }, [id]);
 
   return { data, error };
